@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Visiting Card - Roshan Likhar</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f1c2e;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    max-width: 430px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #112036;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* TOP TEXT SECTION */
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e8b84d;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.role {
+    font-size: 20px;
+    color: #e8b84d;
+    margin-bottom: 20px;
+}
+
+/* LEFT INFO */
+.info {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #e8b84d;
+}
+
+/* BUTTONS + QR SIDE BY SIDE */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT BUTTONS COLUMN */
+.left-buttons {
+    width: 58%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    background: #1c2942;
+    color: white;
+    border: 1px solid #26354f;
+}
+
+.btn:hover {
+    background: #26354f;
+}
+
+/* QR RIGHT SIDE */
+.qr-box {
+    width: 40%;
+    text-align: center;
+}
+
+.qr {
+    width: 140px;
+    border-radius: 12px;
+    background: white;
+    padding: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="title">KRISH AUTOMATION</div>
+
+    <div class="name">Roshan Likhar</div>
+    <div class="role">Business Automation Expert</div>
+
+    <div class="info">
+        <p><span class="icon">📞</span>9730757557</p>
+        <p><span class="icon">✉️</span>krishwhatsappautomations@gmail.com</p>
+    </div>
+
+    <!-- BUTTONS + QR SIDE BY SIDE -->
+    <div class="row">
+
+        <div class="left-buttons">
+            <a class="btn" href="tel:9730757557">
+                <span class="icon">📞</span> Call Now
+            </a>
+
+            <a class="btn" href="https://wa.me/919730757557">
+                <span class="icon">💬</span> WhatsApp Chat
+            </a>
+
+            <a class="btn" href="RoshanLikhar.vcf">
+                <span class="icon">💾</span> Save Contact
+            </a>
+        </div>
+
+        <div class="qr-box">
+            <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/919730757557">
+            <p style="margin-top:8px;">Scan to WhatsApp</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
